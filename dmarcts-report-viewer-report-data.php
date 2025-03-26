@@ -59,12 +59,11 @@ function tmpl_reportData($reportnumber, $reports, $host_lookup = 1) {
 		if (empty($row['raw_xml']) ) {
 			$row['raw_xml'] = "
 			<?xml version='1.0' encoding='UTF-8'?>
-			<feedback>
-			<--
+			<!--
 			  The XML source for this report has not been stored in the database
 			  because it exceeded the configured size limit
 			-->
-			</feedback>
+			<feedback/>
 			";
 		}
 
